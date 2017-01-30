@@ -248,7 +248,7 @@ function choseScopes(rl, callback, chosen, lang) {
 		list.push(count < 10 ? '   ' : '  ', '\x1b[1m', count, selected ? '. ' : '.\x1b[0m ', allScopes[p][lang]||p, selected ? '\x1b[0m\n' : '\n');
 	}
 	console.log(list.join(''));
-	rl.question(chosen.length ? 'Add other permission if you like [' + current.join(',') + ']: ' : 'Choose at least one permission: ', function (result) {
+	rl.question(chosen.length ? 'Add other permission if you like [' + current.join(',') + '] or press enter: ' : 'Choose at least one permission: ', function (result) {
 		if (result) {
 			var position = parseInt(result);
 			if (!isNaN(position)) {
