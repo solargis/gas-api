@@ -1,0 +1,12 @@
+{
+  "name": "gas-api",
+  "version": "1.0.0",
+  "description": "Google Apps Script (Light) API",
+  "main": "gas-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "node gas-api.js"
+  },
+  "author": "Milan Skuhra",
+  "license": "ISC"
+}

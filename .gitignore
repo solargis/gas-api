@@ -1,0 +1,9 @@
+.*
+
+# dependencies
+node_modules
+
+# IDEAj project files
+*.iml
+*.ipr
+*.iws
