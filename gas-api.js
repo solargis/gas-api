@@ -280,13 +280,16 @@ function exportToFile(file, line, macher) {
 		if (err && err.code != 'ENOENT') throw err;
 		else if (err) fs.writeFile(file, line+'\n', function (err) { if (err) throw err; });
 		else {
-			content = content.split('\n');
+			content = content.toString('utf8').split('\n');
 			var i = 0;
 			for (; i < content.length; i++) if (content[i].match(macher)) {
 				content[i] = line;
 				break;
 			}
-			if (i == content.length) content.push(line, '');
+			if (i == content.length) {
+				if (content[content.length - 1]) content.push(line, '');
+				else content.splice(content.length - 1, 0, line);
+			}
 			fs.writeFile(file, content.join('\n'), function (err) { if (err) throw err; });
 		}
 	});
