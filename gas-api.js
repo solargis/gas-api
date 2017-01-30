@@ -276,6 +276,9 @@ function choseScopes(rl, callback, chosen, lang) {
 }
 
 function exportToFile(file, line, macher) {
+	if (path.basename(path.dirname(process.cwd())) == 'node_modules') {
+		file = path.join(path.dirname(path.dirname(process.cwd())), file);
+	}
 	fs.readFile(file, function(err, content) {
 		if (err && err.code != 'ENOENT') throw err;
 		else if (err) fs.writeFile(file, line+'\n', function (err) { if (err) throw err; });
