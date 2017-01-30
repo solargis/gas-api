@@ -80,6 +80,7 @@ from node.js script.
     * Then copy result code back tu script.
     * Script prints environment variable `GOOGLE_AUTH` at last line and also to `.env` file.
     * Apply environment settings by command `. .env`.
+    > **Note:** Given permissions can be removed at page <https://myaccount.google.com/permissions>.
  1. Create file `index.js` with following content:
     ```javascript
     var GoogleAppsScriptAPI = require('gas-api');
