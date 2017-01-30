@@ -47,7 +47,7 @@ from node.js script.
       ![Dialog: Deploy as API executable (empty)](./readme-resoureces/Dialog-DeployAsApiExecutable-empty.png)
     * Then displays warning that new scopes may need to authorisation.
       Press button ___Continue___.  
-      ![Dialow: Deploy as API executable (Waring)](./readme-resoureces/Dialog-Warning.png)
+      ![Dialog: Deploy as API executable (Warning)](./readme-resoureces/Dialog-Warning.png)
     * After that dialog shows _Current API ID_. You will need it later to identify called script.  
       Copy it an close dialog by button ___Close___.  
       ![Dialog: Deploy as API executable (version 1)](./readme-resoureces/Dialog-DeployAsApiExecutable-v1.png)
