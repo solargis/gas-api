@@ -8,5 +8,9 @@
     "create": "node gas-api.js"
   },
   "author": "Milan Skuhra",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "gas-api.js",
+    "usage.js"
+  ]
 }
